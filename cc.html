@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<link rel="stylesheet" href="cc.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <div class="container2">
+        <div class="dropdown">
+            <p>From</p>
+        <select name="from" onchange="loadflag(this, 'fromFlag')">
+        </select>
+        <input   placeholder="Enter Amount" id="amount" >
+        <div class="icon">
+            <img id="fromFlag" src="https://flagsapi.com/US/flat/64.png">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <img id="toFlag" src="https://flagsapi.com/IN/flat/64.png">
+            
+        </div>
+        <p>To</p>
+        <select name="to" onchange="loadflag(this, 'toFlag')">
+        </select>
+        <input placeholder="Converted Amount" id="convertedAmount" >
+        </div>
+        <div class="btn">
+            <button id="convertBtn">Convert</button>
+        </div>
+        
+         </div>
+    </div>
+    <script src="cc2.js"></script>
+</body>
+</html>
